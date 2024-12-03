@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Door</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .door {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .door:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome! Choose a Door</h1>
+  <div>
+    <button class="door" onclick="openDoor(1)">Door 1</button>
+    <button class="door" onclick="openDoor(2)">Door 2</button>
+  </div>
+
+  <script>
+    function openDoor(doorNumber) {
+      if (doorNumber === 1) {
+        window.location.href = "https://www.youtube.com/watch?v=example"; // Replace with your video URL
+      } else if (doorNumber === 2) {
+        window.location.href = "https://forms.hubspot.com/example"; // Replace with your HubSpot form URL
+      }
+    }
+  </script>
+</body>
+</html>
